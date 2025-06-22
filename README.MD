@@ -10,25 +10,25 @@ This project uses the CoinMarketCap API to collect, analyze, and visualize crypt
 - Handles API connection errors and rate limits gracefully.
 - Provides exploratory data analysis including:
   - Average percentage price changes over multiple timeframes (1h, 24h, 7d, 30d, 60d, 90d).
-  - Visualization of cryptocurrency price trends over time (example: Bitcoin).
+  - Visualization of cryptocurrency price trends over time (e.g., Bitcoin).
 - Outputs data both as DataFrames and CSV files for further analysis.
 
 ## Setup Instructions
 1. Install required Python packages:
-   ```bash
    pip install requests pandas seaborn matplotlib
+
 2. Obtain a CoinMarketCap Pro API key and replace it in the script:
-  ```bash 
-      headers = {
-        'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': 'YOUR_API_KEY_HERE',}```
+   headers = {
+       'Accepts': 'application/json',
+       'X-CMC_PRO_API_KEY': 'YOUR_API_KEY_HERE',
+   }
 
 3. Run the script in a Jupyter notebook or Python environment.
 
-4. Adjust the data rate limit in Jupyter if necessary using:
-  jupyter notebook --NotebookApp.iopub_data_rate_limit=1e10
+4. If you're using Jupyter Notebook and encounter data rate limit issues, increase the limit with:
+   jupyter notebook --NotebookApp.iopub_data_rate_limit=1e10
 
 ## Data Visualization
 - Uses Seaborn and Matplotlib for plotting trends and point plots.
 - Visualizes percentage changes across different time frames.
-- Line plot example shows Bitcoin’s price trends over time.
+- Includes a line plot showing Bitcoin’s price trends over time.
