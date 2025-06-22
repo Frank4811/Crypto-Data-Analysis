@@ -18,10 +18,10 @@ This project uses the CoinMarketCap API to collect, analyze, and visualize crypt
    ```bash
    pip install requests pandas seaborn matplotlib
 2. Obtain a CoinMarketCap Pro API key and replace it in the script:
-  headers = {
-    'Accepts': 'application/json',
-    'X-CMC_PRO_API_KEY': 'YOUR_API_KEY_HERE',
-}
+  ```bash 
+      headers = {
+        'Accepts': 'application/json',
+        'X-CMC_PRO_API_KEY': 'YOUR_API_KEY_HERE',}
 
 3. Run the script in a Jupyter notebook or Python environment.
 
