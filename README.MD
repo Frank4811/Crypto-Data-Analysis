@@ -17,3 +17,18 @@ This project uses the CoinMarketCap API to collect, analyze, and visualize crypt
 1. Install required Python packages:
    ```bash
    pip install requests pandas seaborn matplotlib
+2. Obtain a CoinMarketCap Pro API key and replace it in the script:
+  headers = {
+    'Accepts': 'application/json',
+    'X-CMC_PRO_API_KEY': 'YOUR_API_KEY_HERE',
+}
+
+3. Run the script in a Jupyter notebook or Python environment.
+
+4. Adjust the data rate limit in Jupyter if necessary using:
+  jupyter notebook --NotebookApp.iopub_data_rate_limit=1e10
+
+## Data Visualization
+- Uses Seaborn and Matplotlib for plotting trends and point plots.
+- Visualizes percentage changes across different time frames.
+- Line plot example shows Bitcoin’s price trends over time.
