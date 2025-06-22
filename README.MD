@@ -21,7 +21,7 @@ This project uses the CoinMarketCap API to collect, analyze, and visualize crypt
   ```bash 
       headers = {
         'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': 'YOUR_API_KEY_HERE',}
+        'X-CMC_PRO_API_KEY': 'YOUR_API_KEY_HERE',}```
 
 3. Run the script in a Jupyter notebook or Python environment.
 
